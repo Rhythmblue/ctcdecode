@@ -24,7 +24,9 @@ def download_extract(url, dl_path):
 # Download/Extract openfst, boost
 download_extract('http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.7.tar.gz',
                  'third_party/openfst-1.6.7.tar.gz')
-download_extract('https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz',
+# download_extract('https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz',
+#                  'third_party/boost_1_67_0.tar.gz')
+download_extract('https://nchc.dl.sourceforge.net/project/boost/boost/1.67.0/boost_1_67_0.tar.gz',
                  'third_party/boost_1_67_0.tar.gz')
 
 for file in ['third_party/kenlm/setup.py', 'third_party/ThreadPool/ThreadPool.h']:
